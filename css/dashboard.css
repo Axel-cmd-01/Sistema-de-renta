@@ -1,0 +1,126 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background: linear-gradient(to right, #ffe9d6, #fff);
+  }
+  
+  .dashboard {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .sidebar {
+    width: 250px;
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+  }
+  
+  .sidebar h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .card {
+    background: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.05);
+  }
+  
+  .card button {
+    margin-top: 10px;
+    background-color: #ffcc80;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .calendar {
+    margin-top: 30px;
+  }
+  
+  .main-content {
+    flex: 1;
+    padding: 30px;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .clock {
+    background-color: #f9f9f9;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .tasks {
+    margin-top: 30px;
+  }
+  
+  .task {
+    display: flex;
+    align-items: center;
+    background: #fefefe;
+    border-radius: 12px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.05);
+    padding: 20px;
+    font-size: 18px;
+    margin-bottom: 20px;
+
+    width: 989px; 
+    height: 189px;
+}
+  
+  .number {
+    font-size: 28px;
+    font-weight: bold;
+    color: orange;
+    margin-right: 20px;
+  }
+  
+  .details {
+    flex: 1;
+  }
+  
+  .time-price {
+    text-align: right;
+  }
+  .mesa-icon {
+    width: 40px; 
+    height: 40px; 
+    margin-left: 10px; 
+    -ms-text-combine-horizontal: right; 
+  }
+
+  .add-btn {
+    position: absolute;
+    top: 129px; 
+    right: 40px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ffcc80;
+    color: white;
+    font-size: 30px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s ease;
+  }
+  
+  .add-btn:hover {
+    transform: scale(1.1);
+  }
+ 

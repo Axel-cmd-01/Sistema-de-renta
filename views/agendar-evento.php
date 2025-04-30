@@ -1,0 +1,1 @@
+Aqui va la vista para agregar el evento 
