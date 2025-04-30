@@ -14,14 +14,14 @@
       <h2>Inventario</h2>
       <div class="card">
         <p><strong>5</strong> Mesas Disponibles
-          <img src="../imagenes/mesa.png" alt="Mesa" class="mesa-icon" />
+          <img src="../img/mesa.png" alt="Mesa" class="mesa-icon" />
 
         </p>
         <button>+ Agregar Mesas</button>
       </div>
       <div class="card"> 
         <p><strong>50</strong> Sillas Disponibles
-          <img src="../imagenes/silla.png" alt="silla" class="mesa-icon" />
+          <img src="../img/silla.png" alt="silla" class="mesa-icon" />
         </p>
         <button>+ Agregar Sillas</button>
       </div>

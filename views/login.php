@@ -26,7 +26,7 @@
             </tr>
             <tr>
               <div class="image-section">
-                <img src="../imagenes/ia.png" alt="Mujer con laptop" />
+                <img src="../img/ia.png" alt="Mujer con laptop" />
             </tr>
 
           </table>
