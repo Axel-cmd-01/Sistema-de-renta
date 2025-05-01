@@ -10,21 +10,46 @@
 
 <body>
   <div class="dashboard">
-    <aside class="sidebar">
+    <aside class="sidebar inventario">
       <h2>Inventario</h2>
       <div class="card">
         <p><strong>5</strong> Mesas Disponibles
           <img src="../img/mesa.png" alt="Mesa" class="mesa-icon" />
-
         </p>
-        <button>+ Agregar Mesas</button>
+        <button id="openModal-mesas">+ Agregar Mesas</button>
+
+        <div class="modal-mesas">
+          <div class="content-modal">
+            <h1>Agregar Mesa</h1>
+            <form>
+              <label for="mesa">Cantidad de Mesas:</label>
+              <input type="number" id="mesa" name="mesa" min="1">
+              <button type="submit">Agregar</button>
+            </form>
+            <button class="close-modal">Cerrar</button>
+          </div>
+        </div>
       </div>
+
       <div class="card"> 
         <p><strong>50</strong> Sillas Disponibles
           <img src="../img/silla.png" alt="silla" class="mesa-icon" />
         </p>
-        <button>+ Agregar Sillas</button>
+        <button id="openModal-sillas">+ Agregar Sillas</button>
       </div>
+
+      <div class="modal-sillas">
+          <div class="content-modal">
+            <h1>Agregar Silla</h1>
+            <form>
+              <label for="silla">Cantidad de Sillas:</label>
+              <input type="number" id="silla" name="silla" min="1">
+              <button type="submit">Agregar</button>
+            </form>
+            <button class="close-modal">Cerrar</button>
+          </div>
+        </div>
+
       <div class="calendar">
         <h3>March, 2022</h3>
         <p>(Calendario decorativo)</p>
@@ -37,7 +62,6 @@
         <h2>Lunes 03</h2>
         <div class="clock">8:48 AM</div>
         <button class="add-btn">+</button>
-
       </header>
 
       <section class="tasks">
@@ -90,10 +114,31 @@
           </div>
         </div>
 
-
       </section>
     </main>
   </div>
 </body>
+
+<script>
+let openmodalMesas = document.querySelector('#openModal-mesas');
+
+let openmodalSillas = document.querySelector('#openModal-sillas');
+
+openmodalMesas.addEventListener('click', () => {
+  document.querySelector('.modal-mesas').style.visibility = 'visible';
+});
+
+openmodalSillas.addEventListener('click', () => {
+  document.querySelector('.modal-sillas').style.visibility = 'visible';
+});
+
+document.querySelectorAll('.close-modal').forEach(button => {
+  button.addEventListener('click', () => {
+    document.querySelector('.modal-sillas').style.visibility = 'hidden';
+    document.querySelector('.modal-mesas').style.visibility = 'hidden';
+  });
+});
+
+</script>
 
 </html>
