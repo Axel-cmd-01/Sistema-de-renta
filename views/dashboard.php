@@ -59,7 +59,7 @@
     <main class="main-content">
       <header>
         <h1>Eventos</h1>
-        <button class="add-btn">+</button>
+        <a href="../views/evento.php" class="add-btn">+</a>
       </header>
 
       <section class="tasks">
