@@ -1,10 +1,14 @@
+<!-- <?php
+  include '../conexion.php';
+?> -->
+
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-z6JRo76dO1YmI3jn7n+H6+DSkF03ZKf1pH1FMD7X3PkID56yC5yqIFbFJyglE3DzdloLX0RExG7XW/+vj++5BA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <meta charset="UTF-8">
-  <title>Caratula - Sillas y Mesas Lifetime</title>
+  <title>Sistema de renta de Sillas y Mesas Lifetime</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap">
   <link rel="stylesheet" href="../css/oooo.css">
 </head>
@@ -18,11 +22,11 @@
           <table>
             <tr><button></button></tr>
             <tr>
-              <button href="http://127.0.0.1:5500/registro.html" target="_blank" class="cara" type="submit" class="btn-login">Registrarse</button>
+              <a href="./views/registro.php" class="cara btn-login">Registrarse</a>  
             </tr>
             <tr><button></button></tr>
             <tr>
-              <button href="../views/prototipo.php" target="_blank" class="cara" type="submit" class="btn-login">Iniciar sesión</button>
+              <a href="../views/prototipo.php" class="cara btn-login">Iniciar sesión</a>  
             </tr>
             <tr>
               <div class="image-section">
@@ -33,8 +37,6 @@
         </div>
     </div>
   </div>
-  </form>
-  </script>
 </body>
 
 </html>

@@ -3,9 +3,14 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Dashboard - Sillas y Mesas</title>
+  <title>Sistema de renta de Sillas y Mesas Lifetime</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/dashboard.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    rel="stylesheet" />
+
+
 </head>
 
 <body>
@@ -31,7 +36,7 @@
         </div>
       </div>
 
-      <div class="card"> 
+      <div class="card">
         <p><strong>50</strong> Sillas Disponibles
           <img src="../img/silla.png" alt="silla" class="mesa-icon" />
         </p>
@@ -39,34 +44,27 @@
       </div>
 
       <div class="modal-sillas">
-          <div class="content-modal">
-            <h1>Agregar Silla</h1>
-            <form>
-              <label for="silla">Cantidad de Sillas:</label>
-              <input type="number" id="silla" name="silla" min="1">
-              <button type="submit">Agregar</button>
-            </form>
-            <button class="close-modal">Cerrar</button>
-          </div>
+        <div class="content-modal">
+          <h1>Agregar Silla</h1>
+          <form>
+            <label for="silla">Cantidad de Sillas:</label>
+            <input type="number" id="silla" name="silla" min="1">
+            <button type="submit">Agregar</button>
+          </form>
+          <button class="close-modal">Cerrar</button>
         </div>
-
-      <div class="calendar">
-        <h3>March, 2022</h3>
-        <p>(Calendario decorativo)</p>
       </div>
     </aside>
 
     <main class="main-content">
       <header>
-        <h1>El horario de hoy</h1>
-        <h2>Lunes 03</h2>
-        <div class="clock">8:48 AM</div>
+        <h1>Eventos</h1>
         <button class="add-btn">+</button>
       </header>
 
       <section class="tasks">
         <div class="task">
-          <div class="number">4</div>
+          <div class="number">1</div>
           <div class="details">
             <strong>Diana 8118044121</strong>
             <p>4 PKTS - $1,000</p>
@@ -74,14 +72,17 @@
             <p>Ultramar #119, Apodaca</p>
           </div>
           <div class="time-price">
-            <p>7:30 AM</p>
+            <p>Lunes 12 de mayo - 7:30 AM</p>
             <p>$1,150</p>
+            <span class="material-symbols-outlined">
+              check_box_outline_blank
+            </span>
           </div>
         </div>
 
         <section class="tasks">
           <div class="task">
-            <div class="number">1</div>
+            <div class="number">2</div>
             <div class="details">
               <strong>Edgar 8113871026</strong>
               <p>1 PKTS - $250</p>
@@ -89,8 +90,11 @@
               <p>Hacienda del carmen #341, Apodaca</p>
             </div>
             <div class="time-price">
-              <p>5:00 PM</p>
+              <p>Lunes 12 de mayo - 5:00 PM</p>
               <p>$400</p>
+              <span class="material-symbols-outlined">
+                check_box
+              </span>
             </div>
           </div>
 
@@ -101,7 +105,7 @@
 
       <section class="tasks">
         <div class="task">
-          <div class="number">2</div>
+          <div class="number">3</div>
           <div class="details">
             <strong>Karen 8113871026</strong>
             <p>2 PKTS - $500</p>
@@ -109,7 +113,7 @@
             <p>Ignacio Manuel Altamirano #225 Reforma 2, Apodaca</p>
           </div>
           <div class="time-price">
-            <p>6:00 PM</p>
+            <p>Lunes 12 de mayo - 6:00 PM</p>
             <p>$650</p>
           </div>
         </div>
@@ -120,25 +124,24 @@
 </body>
 
 <script>
-let openmodalMesas = document.querySelector('#openModal-mesas');
+  let openmodalMesas = document.querySelector('#openModal-mesas');
 
-let openmodalSillas = document.querySelector('#openModal-sillas');
+  let openmodalSillas = document.querySelector('#openModal-sillas');
 
-openmodalMesas.addEventListener('click', () => {
-  document.querySelector('.modal-mesas').style.visibility = 'visible';
-});
-
-openmodalSillas.addEventListener('click', () => {
-  document.querySelector('.modal-sillas').style.visibility = 'visible';
-});
-
-document.querySelectorAll('.close-modal').forEach(button => {
-  button.addEventListener('click', () => {
-    document.querySelector('.modal-sillas').style.visibility = 'hidden';
-    document.querySelector('.modal-mesas').style.visibility = 'hidden';
+  openmodalMesas.addEventListener('click', () => {
+    document.querySelector('.modal-mesas').style.visibility = 'visible';
   });
-});
 
+  openmodalSillas.addEventListener('click', () => {
+    document.querySelector('.modal-sillas').style.visibility = 'visible';
+  });
+
+  document.querySelectorAll('.close-modal').forEach(button => {
+    button.addEventListener('click', () => {
+      document.querySelector('.modal-sillas').style.visibility = 'hidden';
+      document.querySelector('.modal-mesas').style.visibility = 'hidden';
+    });
+  });
 </script>
 
 </html>
