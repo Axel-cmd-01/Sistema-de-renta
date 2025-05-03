@@ -14,7 +14,7 @@
     <div class="form-section">
       <h1>SILLAS Y MESAS LIFETIME</h1>
       <h2>Iniciar Sesión</h2>
-      <form action="dashboard.html" method="get">
+      <form action="dashboard.php" method="get">
         <div class="form-group">
           <label for="usuario">Usuario</label>
           <input type="text" id="usuario" name="usuario" placeholder="Ingresa tu usuario" required />

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 
 <head>
@@ -67,13 +67,13 @@
           <div class="number">1</div>
           <div class="details">
             <strong>Diana 8118044121</strong>
-            <p>4 PKTS - $1,000</p>
-            <p>Flete: $150</p>
+            <p>4 mesas - $220.00</p>
+            <p>14 sillas - $280.00</p>
             <p>Ultramar #119, Apodaca</p>
           </div>
           <div class="time-price">
             <p>Lunes 12 de mayo - 7:30 AM</p>
-            <p>$1,150</p>
+            <p>$500.00</p>
             <span class="material-symbols-outlined">
               check_box_outline_blank
             </span>
@@ -85,20 +85,18 @@
             <div class="number">2</div>
             <div class="details">
               <strong>Edgar 8113871026</strong>
-              <p>1 PKTS - $250</p>
-              <p>Flete: $150</p>
+              <p>4 mesas - $220.00</p>
+              <p>14 sillas - $280.00</p>
               <p>Hacienda del carmen #341, Apodaca</p>
             </div>
             <div class="time-price">
               <p>Lunes 12 de mayo - 5:00 PM</p>
-              <p>$400</p>
+              <p>$500.00</p>
               <span class="material-symbols-outlined">
                 check_box
               </span>
             </div>
           </div>
-
-
         </section>
       </section>
 
@@ -108,13 +106,13 @@
           <div class="number">3</div>
           <div class="details">
             <strong>Karen 8113871026</strong>
-            <p>2 PKTS - $500</p>
-            <p>Flete: $150</p>
+            <p>4 mesas - $220.00</p>
+            <p>14 sillas - $280.00</p>
             <p>Ignacio Manuel Altamirano #225 Reforma 2, Apodaca</p>
           </div>
           <div class="time-price">
             <p>Lunes 12 de mayo - 6:00 PM</p>
-            <p>$650</p>
+            <p>$500.00</p>
           </div>
         </div>
 

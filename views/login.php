@@ -22,7 +22,7 @@
           <table>
             <tr><button></button></tr>
             <tr>
-              <a href="./views/registro.php" class="cara btn-login">Registrarse</a>  
+              <a href="../views/registro.php" class="cara btn-login">Registrarse</a>  
             </tr>
             <tr><button></button></tr>
             <tr>
