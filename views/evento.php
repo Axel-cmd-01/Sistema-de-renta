@@ -25,47 +25,84 @@
       <section class="inventario">
         <h2>Inventario</h2>
         <div class="card">
-          <p><strong>5 </strong> Mesas Disponibles
-            <img src="../img/mesa.png" alt="Mesa" class="mesa-icon" />
+          <p><strong>5ㅤ</strong> Mesas Disponibles
+            <img src="../img/mesa.png" alt="Mesa" class="icono" />
           </p>
         </div>
-
         <div class="card">
-          <p><strong>50</strong> Sillas Disponibles
-            <img src="../img/silla.png" alt="silla" class="mesa-icon" />
+          <p><strong>50ㅤ</strong> Sillas Disponibles
+            <img src="../img/silla.png" alt="Silla" class="icono" />
           </p>
         </div>
       </section>
 
       <section class="evento">
         <form>
-          <label for="cliente">Cliente:</label>
-          <input type="text" id="cliente" name="cliente" required>
+          <label>Cliente:</label>
+          <input type="text" required>
 
-          <label for="direccion">Direccion:</label>
-          <input type="text" id="direccion" name="direccion" required>
+          <label>Dirección:</label>
+          <input type="text" required>
 
-          <div class="sillas">
-            <label for="sillas">Sillas:</label>
-            <input type="number" required>
+          <div class="input-row">
+            <img src="../img/silla.png" alt="Silla" class="icono-small" />
+            <span>Sillas ($20 c/u)</span>
+            <input type="number" min="0" value="0" id="sillas" required>
           </div>
 
-          <div class="mesas">
-            <label for="mesas">Mesas:</label>
-            <input type="number" required>
+          <div class="input-row">
+            <img src="../img/mesa.png" alt="Mesa" class="icono-small" />
+            <span>Mesas ($50 c/u)</span>
+            <input type="number" min="0" value="0" id="mesas" required>
           </div>
 
-          <label for="dia">Día:</label>
+          <div class="input-row">
+            <img src="../img/flete.png" alt="Flete" class="icono-small" />
+            <span>Flete ($ )</span>
+            <input type="number" min="0" value="0" id="flete" required>
+          </div>
+
+          <div class="input-row">
+            <img src="../img/mantel.png" alt="Mantel" class="icono-small" />
+            <span>Manteles ($40 c/u)</span>
+            <input type="number" min="0" value="0" id="manteles" required>
+          </div>
+
+          <label>Día:</label>
           <input type="date" required>
 
-          <label for="hora">Hora:</label>
+          <label>Hora:</label>
           <input type="time" required>
 
-          <input type="submit">
+          <div class="total">
+            <p>Total: <strong id="total">$0</strong></p>
+          </div>
+
+          <input type="submit" value="Agendar" style="font-family: 'Poppins', sans-serif; font-weight: 700;">
+
+          
         </form>
       </section>
     </div>
   </main>
+
+  <script>
+    const sillas = document.getElementById('sillas');
+    const mesas = document.getElementById('mesas');
+    const flete = document.getElementById('flete');
+    const manteles = document.getElementById('manteles');
+    const total = document.getElementById('total');
+
+    function calcularTotal() {
+      const totalFinal = (sillas.value * 20) + (mesas.value * 50) + (manteles.value * 40) + (flete.value * 1);
+      total.textContent = "$" + totalFinal;
+    }
+
+    sillas.addEventListener('input', calcularTotal);
+    mesas.addEventListener('input', calcularTotal);
+    flete.addEventListener('input', calcularTotal);
+    manteles.addEventListener('input', calcularTotal);
+  </script>
 </body>
 
 </html>
