@@ -46,13 +46,13 @@
 
           <div class="sillas">
             <label for="sillas">Sillas:</label>
-            <input type="number" required>
+            <input type="number" min="0" value="0" required>
             <p>$20.00 c/u</p>
           </div>
 
           <div class="mesas">
             <label for="mesas">Mesas:</label>
-            <input type="number" required>
+            <input type="number" min="0" value="0" required>
             <p>$85.00 c/u</p>
           </div>
 
