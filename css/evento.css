@@ -96,22 +96,32 @@ form {
 
 input {
   width: 80%;
-  padding: 10px;
+  padding: 5px;
   margin: 10px 0;
   border-radius: 5px;
   border: 1px solid #ddd;
   font-size: 18px;
 }
 
-.sillas, .mesas {
+.sillas, .mesas, .precio {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0px 10px;
 }
 
+input[type="number"] {
+  width: 100px;
+}
+
 input[type="submit"] {
   background-color: #ffcc80;
   font-size: 18px;
   cursor: pointer;
+}
+
+input[type="date"], input[type="time"] {
+  width: 300px;
+  text-align: center;
+  margin-left: 10px;
 }

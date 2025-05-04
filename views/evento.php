@@ -25,12 +25,12 @@
       <section class="inventario">
         <h2>Inventario</h2>
         <div class="card">
-          <p><strong>5ㅤ</strong> Mesas Disponibles
+          <p><strong>5 </strong> Mesas Disponibles
             <img src="../img/mesa.png" alt="Mesa" class="icono" />
           </p>
         </div>
         <div class="card">
-          <p><strong>50ㅤ</strong> Sillas Disponibles
+          <p><strong>50 </strong> Sillas Disponibles
             <img src="../img/silla.png" alt="Silla" class="icono" />
           </p>
         </div>
@@ -44,16 +44,16 @@
           <label>Dirección:</label>
           <input type="text" required>
 
-          <div class="input-row">
-            <img src="../img/silla.png" alt="Silla" class="icono-small" />
-            <span>Sillas ($20 c/u)</span>
-            <input type="number" min="0" value="0" id="sillas" required>
+          <div class="sillas">
+            <label for="sillas">Sillas:</label>
+            <input type="number" required>
+            <p>$20.00 c/u</p>
           </div>
 
-          <div class="input-row">
-            <img src="../img/mesa.png" alt="Mesa" class="icono-small" />
-            <span>Mesas ($50 c/u)</span>
-            <input type="number" min="0" value="0" id="mesas" required>
+          <div class="mesas">
+            <label for="mesas">Mesas:</label>
+            <input type="number" required>
+            <p>$85.00 c/u</p>
           </div>
 
           <div class="input-row">
@@ -68,19 +68,15 @@
             <input type="number" min="0" value="0" id="manteles" required>
           </div>
 
-          <label>Día:</label>
-          <input type="date" required>
+          <label>Día:
+            <input type="date" required>
+          </label>
 
-          <label>Hora:</label>
-          <input type="time" required>
+          <label>Hora:
+            <input type="time" required>
+          </label>
 
-          <div class="total">
-            <p>Total: <strong id="total">$0</strong></p>
-          </div>
-
-          <input type="submit" value="Agendar" style="font-family: 'Poppins', sans-serif; font-weight: 700;">
-
-          
+          <input type="submit">
         </form>
       </section>
     </div>
