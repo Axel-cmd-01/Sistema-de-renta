@@ -27,7 +27,7 @@
         </div>
 
         <div class="form-group">
-          <label for="rol">Selecciona tu rol:</label>
+          <label for="rol">Selecciona el rol:</label>
           <select id="rol" name="rol" required>
             <option value="">Selecciona una opción</option>
             <option value="administrador">Administrador</option>
@@ -35,7 +35,11 @@
           </select>
         </div>
 
-        <button type="submit" class="btn-login">ACCESO</button>
+        <div class="form-group">
+          <a href="../views/iniciarsesion.php">Iniciar sesiòn</a>
+        </div>
+
+        <button type="submit" class="btn-login">REGISTRAR</button>
       </form>
     </div>
     <div class="image-section">

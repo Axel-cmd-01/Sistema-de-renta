@@ -24,6 +24,17 @@ body {
   margin-bottom: 20px;
 }
 
+.cerrarSesion a {
+  background-color: #ffcc80;
+  border: none;
+  padding: 7px 40%;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.3em;
+  text-decoration: none;
+  color: black;
+}
+
 .card {
   background: white;
   padding: 15px;

@@ -21,18 +21,22 @@
         </div>
 
         <div class="form-group">
-          <label for="password">Contraseña</label>
+          <label for="password">Clave</label>
           <input type="password" id="password" name="password" placeholder="Ingresa tu contraseña" required />
           <span class="toggle-password" onclick="togglePassword()">👁</span>
         </div>
 
         <div class="form-group">
-          <label for="rol">Selecciona tu rol:</label>
+          <label for="rol">Selecciona el rol:</label>
           <select id="rol" name="rol" required>
             <option value="">Selecciona una opción</option>
             <option value="administrador">Administrador</option>
             <option value="empleado">Empleado</option>
           </select>
+        </div>
+
+        <div class="form-group">
+          <a href="../views/registro.php">Registrarse</a>
         </div>
 
         <button type="submit" class="btn-login">ACCESO</button>

@@ -40,7 +40,7 @@
         <p><strong>50</strong> Sillas Disponibles
           <img src="../img/silla.png" alt="silla" class="mesa-icon" />
         </p>
-        <button id="openModal-sillas">+  Agregar Sillas</button>
+        <button id="openModal-sillas">+ Agregar Sillas</button>
       </div>
 
       <div class="modal-sillas">
@@ -53,6 +53,10 @@
           </form>
           <button class="close-modal">Cerrar</button>
         </div>
+      </div>
+
+      <div class="cerrarSesion">
+        <a href="../views/login.php">Salir</a>
       </div>
     </aside>
 
@@ -67,9 +71,9 @@
           <div class="number">1</div>
           <div class="details">
             <strong>Diana 8118044121</strong>
-            <p>4 Mesas   - $200.00</p>
+            <p>4 Mesas - $200.00</p>
             <p>40 Sillas - $800.00</p>
-            <p>Flete     - $150.00</p>
+            <p>Flete - $150.00</p>
 
             <p>Ultramar #119, Apodaca</p>
           </div>
@@ -89,7 +93,7 @@
               <strong>Edgar 8113871026</strong>
               <p>2 Mesas - $100.00</p>
               <p>20 Sillas - $400.00</p>
-              <p>Flete     - $150.00</p>
+              <p>Flete - $150.00</p>
 
               <p>Hacienda del carmen #341, Apodaca</p>
             </div>
@@ -112,7 +116,7 @@
             <strong>Karen 8113871026</strong>
             <p>10 mesas - $500.00</p>
             <p>100 sillas - $2,000.00</p>
-            <p>Flete     - $150.00</p>
+            <p>Flete - $150.00</p>
 
             <p>Ignacio Manuel Altamirano #225 Reforma 2, Apodaca</p>
           </div>
