@@ -76,7 +76,7 @@
             <input type="time" required>
           </label>
 
-          <input type="submit">
+          <button>Registrar evento</button>
         </form>
       </section>
     </div>
