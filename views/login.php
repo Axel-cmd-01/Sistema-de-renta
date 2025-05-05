@@ -26,7 +26,7 @@
             </tr>
             <tr><button></button></tr>
             <tr>
-              <a href="../views/prototipo.php" class="cara btn-login">Iniciar sesión</a>  
+              <a href="../views/iniciarsesion.php" class="cara btn-login">Iniciar sesión</a>  
             </tr>
             <tr>
               <div class="image-section">

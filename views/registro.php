@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap">
   <link rel="stylesheet" href="../css/oooo.css">
 </head>
+
 <body>
   <div class="container">
     <div class="form-section">
@@ -15,20 +16,25 @@
       <h2>Registrarse</h2>
       <form action="../views/dashboard.php" method="get">
         <div class="form-group">
-          <label for="usuario">Usuario</label>
+          <label for="usuario">Nombre del usuario</label>
           <input type="text" id="usuario" name="usuario" placeholder="Ingresa tu usuario" required />
         </div>
-      
+
         <div class="form-group">
-          <label for="password">Contraseña</label>
+          <label for="password">Clave del usuario</label>
           <input type="password" id="password" name="password" placeholder="Ingresa tu contraseña" required />
           <span class="toggle-password" onclick="togglePassword()">👁</span>
         </div>
+
         <div class="form-group">
-            <label for="password">Confirmar contraseña</label>
-            <input type="password" id="password" name="password" placeholder="Ingresa tu contraseña" required />
-            <span class="toggle-password" onclick="togglePassword()">👁</span>
-          </div>
+          <label for="rol">Selecciona tu rol:</label>
+          <select id="rol" name="rol" required>
+            <option value="">Selecciona una opción</option>
+            <option value="administrador">Administrador</option>
+            <option value="empleado">Empleado</option>
+          </select>
+        </div>
+
         <button type="submit" class="btn-login">ACCESO</button>
       </form>
     </div>
@@ -48,4 +54,5 @@
     }
   </script>
 </body>
+
 </html>
