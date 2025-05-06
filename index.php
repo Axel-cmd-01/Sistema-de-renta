@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <?php
+  <?php 
   include 'views/login.php';
   ?>
 </body>

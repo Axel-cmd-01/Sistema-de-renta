@@ -1,6 +1,6 @@
 <!-- <?php
-  include '../conexion.php';
-?> -->
+      include '../conexion.php';
+      ?> -->
 
 <!DOCTYPE html>
 <html lang="es">
@@ -22,21 +22,63 @@
           <table>
             <tr><button></button></tr>
             <tr>
-              <a href="../views/registro.php" class="cara btn-login">Registrarse</a>  
+              <a href="../views/registro.php" class="cara btn-login">Registrarse</a>
             </tr>
             <tr><button></button></tr>
             <tr>
-              <a href="../views/iniciarsesion.php" class="cara btn-login">Iniciar sesión</a>  
+              <a href="../views/iniciarsesion.php" class="cara btn-login">Iniciar sesión</a>
             </tr>
             <tr>
               <div class="image-section">
                 <img src="../img/ia.png" alt="Mujer con laptop" />
             </tr>
-
           </table>
         </div>
+      </form>
+    </div>
+  </div>
+
+  <button id="openModal-acerca-de">Acerca de</button>
+
+  <div class="acerca-de" id="modalAcercaDe">
+    <div class="modal-acerca-de">
+      <span class="close-modal" id="closeModal">&times;</span>
+      <div class="content-modal">
+        <h1>Acerca de</h1>
+        <p>Este sistema fue desarrollado por estudiantes de la Facultad de Ingeniería Mecánica y Eléctrica.</p>
+        <br>
+        <ul>
+          <li>Lázaro Axel Juárez Herrera</li>
+          <li>Edwin Abraham Muñiz Aguilar</li>
+          <li>Raúl Bayron Alvarado Sánchez</li>
+          <li>Angélica Cortez Esparza</li>
+          <li>Valeria Martínez Ondarza</li>
+          <li>Juan Julián Palomo Bermúdez</li>
+          <li>André Isaí Zermeño Ruiz</li>
+          <li>Serena Domínguez García</li>
+        </ul>
+      </div>
     </div>
   </div>
 </body>
+<script>
+  const openModalBtn = document.getElementById('openModal-acerca-de');
+  const modal = document.getElementById('modalAcercaDe');
+  const closeModalBtn = document.getElementById('closeModal');
+
+  openModalBtn.addEventListener('click', () => {
+    modal.style.display = 'block';
+  });
+
+  closeModalBtn.addEventListener('click', () => {
+    modal.style.display = 'none';
+  });
+
+  window.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      modal.style.display = 'none';
+    }
+  });
+</script>
 
 </html>

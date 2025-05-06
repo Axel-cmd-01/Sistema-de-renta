@@ -14,7 +14,7 @@
     <div class="form-section">
       <h1>SILLAS Y MESAS LIFETIME</h1>
       <h2>Registrarse</h2>
-      <form action="../views/dashboard.php" method="get">
+      <form action="procesar_registro.php" method="post" onsubmit="return confirmarRegistro()">
         <div class="form-group">
           <label for="usuario">Nombre del usuario</label>
           <input type="text" id="usuario" name="usuario" placeholder="Ingresa tu usuario" required />
@@ -56,6 +56,22 @@
         passwordInput.type = "password";
       }
     }
+
+    function confirmarRegistro() {
+      return true;
+    }
+
+    window.onload = function() {
+    <?php if(isset($_SESSION['mensaje'])): ?>
+        alert('<?php echo $_SESSION['mensaje']; ?>');
+        <?php unset($_SESSION['mensaje']); ?>
+    <?php endif; ?>
+    
+    <?php if(isset($_SESSION['error'])): ?>
+        alert('Error: <?php echo $_SESSION['error']; ?>');
+        <?php unset($_SESSION['error']); ?>
+    <?php endif; ?>
+};
   </script>
 </body>
 

@@ -18,7 +18,7 @@ main {
 
 .contenido {
   background-color: white;
-  width: 81%;
+  width: 85%;
   min-height: 85vh; 
   border-radius: 20px;
   padding: 20px;
@@ -53,6 +53,12 @@ main {
 
 .inventario h2 {
   font-size: 20px;
+}
+
+.card p {
+  display: flex;
+  align-items: center; 
+  gap: 4px; 
 }
 
 .card {
@@ -157,5 +163,5 @@ button {
   font-size: 22px;
   border-radius: 10px;
   font-weight: bold;
-  color: green;
+  color: black;
 }

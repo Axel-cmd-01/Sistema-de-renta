@@ -2,9 +2,9 @@
 <html lang="es">
 
 <head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-z6JRo76dO1YmI3jn7n+H6+DSkF03ZKf1pH1FMD7X3PkID56yC5yqIFbFJyglE3DzdloLX0RExG7XW/+vj++5BA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <meta charset="UTF-8">
-  <title>Sistema de renta de Sillas y Mesas Lifetime</title>
+  <title>Iniciar Sesión - Sistema de renta</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap">
   <link rel="stylesheet" href="../css/oooo.css">
 </head>
@@ -14,36 +14,27 @@
     <div class="form-section">
       <h1>SILLAS Y MESAS LIFETIME</h1>
       <h2>Iniciar Sesión</h2>
-      <form action="dashboard.php" method="get">
+      <form action="procesar_login.php" method="post">
         <div class="form-group">
-          <label for="usuario">Usuario</label>
-          <input type="text" id="usuario" name="usuario" placeholder="Ingresa tu usuario" required />
+          <label for="usuario">Nombre de usuario</label>
+          <input type="text" id="usuario" name="usuario" placeholder="Ingresa tu usuario" required>
         </div>
 
         <div class="form-group">
-          <label for="password">Clave</label>
-          <input type="password" id="password" name="password" placeholder="Ingresa tu contraseña" required />
+          <label for="password">Contraseña</label>
+          <input type="password" id="password" name="password" placeholder="Ingresa tu contraseña" required>
           <span class="toggle-password" onclick="togglePassword()">👁</span>
         </div>
 
+        <button type="submit" class="btn-login">INGRESAR</button>
+        
         <div class="form-group">
-          <label for="rol">Selecciona el rol:</label>
-          <select id="rol" name="rol" required>
-            <option value="">Selecciona una opción</option>
-            <option value="administrador">Administrador</option>
-            <option value="empleado">Empleado</option>
-          </select>
+          <a href="registro.php">¿No tienes cuenta? Regístrate</a>
         </div>
-
-        <div class="form-group">
-          <a href="../views/registro.php">Registrarse</a>
-        </div>
-
-        <button type="submit" class="btn-login">ACCESO</button>
       </form>
     </div>
     <div class="image-section">
-      <img src="../img/ia.png" alt="Mujer con laptop" />
+      <img src="../img/ia.png" alt="Mujer con laptop">
     </div>
   </div>
 
@@ -58,5 +49,4 @@
     }
   </script>
 </body>
-
 </html>
