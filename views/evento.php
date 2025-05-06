@@ -115,10 +115,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <p>$20.00 c/u</p>
           </div>
 
-          <div class="mesas">
-            <label for="mesas">Mesas:</label>
+          <div class="input-row">
+            <img src="../img/mesa.png" alt="Mesa" class="icono-small" />
+            <span>Mesas ($50 c/u)</span>
             <input type="number" name="mesas" min="0" max="<?= $inventario['mesas'] ?>" value="0" required>
-            <p>$50.00 c/u</p>
           </div>
 
           <div class="input-row">
