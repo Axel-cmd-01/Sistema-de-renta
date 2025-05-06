@@ -109,10 +109,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
           <label>Dirección:</label>
           <input type="text" name="direccion" required>
 
-          <div class="sillas">
-            <label for="sillas">Sillas:</label>
+         <div class="input-row">
+            <img src="../img/silla.png" alt="Silla" class="icono-small" />
+            <span>Sillas ($20 c/u)</span>
             <input type="number" name="sillas" min="0" max="<?= $inventario['sillas'] ?>" value="0" required>
-            <p>$20.00 c/u</p>
           </div>
 
           <div class="input-row">
