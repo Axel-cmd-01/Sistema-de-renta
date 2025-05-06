@@ -1,7 +1,3 @@
-<!-- <?php
-      include '../conexion.php';
-      ?> -->
-
 <!DOCTYPE html>
 <html lang="es">
 
@@ -57,6 +53,12 @@
           <li>André Isaí Zermeño Ruiz</li>
           <li>Serena Domínguez García</li>
         </ul>
+        <br>
+        <div class="contacto">
+          <h2>Contacto:</h2>
+          <p>Nùmero: 8117817992</p>
+          <p>Correo: lazarojuarez.h@outlook.com</p>
+        </div>
       </div>
     </div>
   </div>
