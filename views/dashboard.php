@@ -189,7 +189,6 @@ if (isset($_SESSION['error'])) {
                 <button type="submit" name="accion" value="restar_manteles">Quitar</button>
               </div>
             </form>
-            <button class="close-modal">Cerrar</button> 
           </div>
         </div>
       </div>
