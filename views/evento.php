@@ -146,7 +146,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <span id="total">$0.00</span>
           </div>
 
-          <button type="submit">Registrar evento</button>
+          <button type="submit" value="Registrar Evento"  style="font-family: 'Poppins', sans-serif; font-weight: 700;">Registrar evento</button>
         </form>
       </section>
     </div>
